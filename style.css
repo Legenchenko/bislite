@@ -1,7 +1,8 @@
 body {
-	font-family: shmarial;
+	font-family: arial;
 	margin: 0;
 	background-color: #e8ebf1;
+    
 }
 	.Bwrappers {
 		max-width: 1000px;
@@ -16,23 +17,28 @@ body {
 		}
 
 	.nav {
-		margin-top: -10px;
+		margin: -5px;
 		list-style: none;
 		float: right;
-		font-size: 30px;
+		font-size: 1.5 em;
+       
+    
 	}
+
+
 		.nav li {
 			display: inline-block;
 			font-size: 13px;
 			margin-left: 10px; 
-			font-weight: 700;
-			line-height: 20px;
+			font-weight: 700px;
+			line-height: 18px;
+            
 		}
 			.nav li a {
-				display: block;
+				display: inline-block;
 				color: black;
 				text-decoration: none;
-				padding: 20px 10px;
+				padding: 10px 10px;
 			}
 			.nav li a:hover {
 				padding-top: 5px;
@@ -48,13 +54,14 @@ body {
 		ul.subnav {
 			display: none;
 		    position: absolute;
-		    width: 200px;
+		    width: 180px;
 		    top: 30px;
 		    left: inherit;
 		    font-size: 13px;
-		    font-weight: 700;
+		    font-weight: 700px;
 			line-height: 20px;
 		    background-color: white;
+            padding-left:0;
 		   }
 
 					ul.subnav > li {
@@ -70,6 +77,7 @@ body {
 					position: relative;
 					width: 2em;
 					margin-top: 0.3em;
+                    
 					}
 					 
 					.smiley::after, .smiley::before {
@@ -98,7 +106,7 @@ body {
 					}
 					ul.subnav > li > a {
 					    display: block;
-					    padding: 10px;
+					    padding: 0 10px;
 					    text-decoration: none;
 					    
 					}
@@ -115,9 +123,9 @@ body {
 						}
 		.downarrow:after {
 			content: "\25be";
-			display: inline;
+			display: inline-block;
 			clear: both;
-			outline-width: 700;
+			outline-width: 700px;
 			padding-left: 10px;
 			padding-bottom: 20px;
 		} 
@@ -127,7 +135,7 @@ body {
 		font-size: 50px;
 		line-height: 20px;
 		font-family: Lato;
-		font-weight: 900;
+		font-weight: 900px;
 		color: black;
 	}
 
@@ -147,7 +155,7 @@ span {
 				background-color: #dd5835;
 				display: block;
 				margin: 0 auto;
-				max-width: 1000px;
+				max-width: 90%;
 			}
 			.foil ul {
 				text-align: center;
@@ -179,13 +187,17 @@ span {
 				width: 23%;
 				margin: 5px;
 				vertical-align: top;
+                
 			}
 
 			.next h6 {
 				font-size: 15px;
-				font-weight: 700;
+				font-weight: 700px;
 				line-height: 20px;
 				text-transform: uppercase;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
 			}
 
 			.next h6:before {
@@ -196,9 +208,9 @@ span {
 				height: 40px;
 				border-radius: 50%;
 				background-position: center;
-				margin-right: 5%;
-				vertical-align: top;
-				margin-bottom: 5%;
+				margin-right: 8%;
+				vertical-align: middle;
+				margin-bottom: 2%;
 			}
 
 			h6.pencil:before {
@@ -223,24 +235,27 @@ span {
 
 		.next p {
 			font-size: 13px;
-			font-weight: 400;
+			font-weight: 400px;
 			line-height: 20px;
 			color: #363636;
 			padding-bottom: 20px;
 			height: 120px;
 			overflow: hidden;
+            text-align: left;
 		}
 
 		.next a {
 			color: #2aacc8;
+            text-decoration: none;
 		}
 
 		.next a:before {
-			content: "\25b8";
+			content: "\003E";
 			display: inline;
 			color: black;
 			clear: both;
 			padding-right: 10px;
+            
 		} 
 
 	.main {
@@ -253,22 +268,26 @@ span {
 		max-width: 1000px;
 		margin: 0 auto;
 		position: relative;
-		padding: 15px 0;
+		padding: 10px 0;
+        align-content: center;
 	}
 
 		.latest ul {
 			float: right;
+            margin: 0;
+            
 		}
 
 			.latest li {
 			display: inline-block;
-			height: 15px;
-			width: 15px;
+			height: 20px;
+			width: 20px;
 			background-color: #2aacc8;
 			border-radius: 50%;
-			font-weight: 700;
+			font-weight: 70px;
 			margin: 5px; 
 			text-align: center;
+            
 			}
 			.latest h6:before {
 				content: "";
@@ -278,23 +297,25 @@ span {
 				background-image: url(img/pointer.png);
 				background-repeat: no-repeat;
 				clear: both;
+                margin-bottom: -5px;
 				}
 
 			.latest h6 {
-				width: 200px;
+				font-size: 0.8em;
 				display: inline;
 			}
 
 		.pic {
-			text-align: center;
-		}
+            text-align: center;
+           	}
 
 		.gallery {
 			display: inline-block;
 			position: relative;
-		}
+        }
 			.gallery img {
 				width: 100%;
+               
 			}
 
 	.other {
@@ -309,7 +330,7 @@ span {
 
 	.gallery:hover .other {
 		display: block;
-		height: 50%;
+		height: 30%;
 	}
 	.other a {
 		vertical-align: middle;
@@ -338,6 +359,7 @@ hr {
 	color: lightgray;
 	max-width: 1000px;
 	margin-bottom: 10px;
+    align-items: center;
 	}
 	
 	.person {
@@ -350,7 +372,7 @@ hr {
 
 		.person h6 {
 				font-size: 15px;
-				font-weight: 700;
+				font-weight: 700px;
 				line-height: 20px;
 				text-transform: uppercase;
 		}
@@ -397,6 +419,10 @@ hr {
 		background-color: #e8fcfe;
 		border: 1px solid #81e4ed;
 		margin: 0 auto;
+        align-items: center;
+        display: flex;
+        justify-content: space-around;
+        overflow: hidden;
 	}
 		.download p {
 			width: 607px;
@@ -405,15 +431,14 @@ hr {
 			font-size: 16px;
 			font-weight: 400;
 			line-height: 26px;
-			display: inline-block;
 			padding: 30px;
 
 		}
 
 		.download b {
-			display: inline-block;
+			display:inline-block;
 			color: #0d0707;
-			font-weight: 700;
+			font-weight: 700px;
 			line-height: 60px;
 			text-transform: uppercase;
 			text-align: center;
@@ -426,6 +451,7 @@ hr {
 			border: 1px solid #2aacc8;
 			border-radius: 8px;
 			box-shadow: inset 0 2px 1px rgba(255, 255, 255, 0.1), 0 2px 3px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
 		}
 
 		.download b:before {
@@ -453,7 +479,10 @@ footer {
 		display: inline-block;
 		width: 14%;
 		vertical-align: top;
-		padding: 30px 0;
+		padding: 5px 0;
+        display: inline-flex;
+        flex-direction: column;
+        word-wrap: break-word;
 	}
 
 		footer > div:first-child {
@@ -465,14 +494,16 @@ footer {
 			}
 
 		footer > div:last-child {
-				width: 22%;
-				text-align: center;
+				width: 20%;
+				flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-around;
 			}
 
 	footer > div > h6 {
 		color: black;
 		font-size: 15px;
-		font-weight: 700;
+		font-weight: 700px;
 		line-height: 20px;
 		text-transform: uppercase;
 		margin-bottom: 15px;
@@ -480,7 +511,7 @@ footer {
 
 	footer > div > p {
 		color: #363636;
-		width: 80%;
+		width: 90%;
 		font-size: 14px;
 		font-weight: 400;
 		line-height: 20px;
@@ -497,7 +528,16 @@ footer {
 		color: #363636;
 		font-size: 14px;
 		font-weight: 400;
+        
 	}
+
+
+footer > div > ul  {
+    list-style-type: none;
+    padding: 0;
+}
+
+
 
 	footer > div > a {
 		font-size: 70px;
@@ -516,6 +556,7 @@ footer {
 		line-height: 20px;
 		text-align: left;
 		float: left;
+        margin: 0;
 	}
 
 	.finish a {
